@@ -1,7 +1,3 @@
-.DS_Store
-_downloads/
-tools/
 Patches.xcodeproj/xcuserdata
 Patches.xcodeproj/project.xcworkspace
 Build/*.aml
-Build/Intermediates/
