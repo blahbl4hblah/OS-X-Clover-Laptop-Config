@@ -36,8 +36,8 @@ install_backlight_kexts
 # create/install patched AppleHDA files
 install_hda
 
-# LiluFriend and kernel cache rebuild
-finish_kexts
+# all kexts are now installed, so rebuild cache
+rebuild_kernel_cache
 
 # update kexts on EFI/CLOVER/kexts/Other
 update_efi_kexts
