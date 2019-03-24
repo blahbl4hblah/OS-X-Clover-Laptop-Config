@@ -19,7 +19,6 @@ DefinitionBlock("", "SSDT", 2, "hack", "_HDAU", 0)
         {
             "layout-id", Buffer(4) { 2, 0, 0, 0 },
             "hda-gfx", Buffer() { "onboard-1" },
-            "no-controller-patch", Buffer() { 1, 0, 0, 0 }, // disables automatic AppleALC patching
         }
         If (CondRefOf(\RMCF.AUDL))
         {
