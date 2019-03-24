@@ -271,7 +271,7 @@
 				<key>AAPL,ig-platform-id</key>
 				<data>BgAmCg==</data>
 				<key>#hda-gfx</key>
-				<string>onboard-1</string>
+				<data>b25ib2FyZC0xAA==</data>
 				<key>#AAPL00,override-no-connect</key>
 				<data></data>
 				<key>#AAPL00,override-no-edid</key>
@@ -339,7 +339,7 @@
 				<key>#layout-id</key>
 				<integer>2</integer>
 				<key>#hda-gfx</key>
-				<string>onboard-1</string>
+				<data>b25ib2FyZC0xAA==</data>
 			</dict>
 		</dict>
 		<key>USB</key>
