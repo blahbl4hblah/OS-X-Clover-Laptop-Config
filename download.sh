@@ -1,11 +1,19 @@
 #!/bin/bash
 #set -x
 
-# get copy of tools
-"$(dirname ${BASH_SOURCE[0]})"/_get_tools.sh
+# get copy of tools if not present
+if [[ ! -d ./tools ]]; then
+    git clone https://github.com/RehabMan/hack-tools.git tools
+fi
+# update tools to latest
+if [[ -e ./tools/.git ]]; then
+    cd ./tools && git pull
+    cd ..
+fi
 
 # include subroutines
-source "$(dirname ${BASH_SOURCE[0]})"/_tools/_download_subs.sh
+DIR=$(dirname ${BASH_SOURCE[0]})
+source "$DIR/tools/_download_subs.sh"
 
 # remove deprecated downloads directory to avoid confusion
 if [[ -e ./downloads ]]; then rm -Rf ./downloads; fi
